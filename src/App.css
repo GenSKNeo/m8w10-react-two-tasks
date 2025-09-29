@@ -1,0 +1,127 @@
+/* Global styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f6fa;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Main container */
+.App {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Header styles */
+.app-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px;
+  background: #6e8efb;
+  color: white;
+  border-radius: 10px;
+}
+
+/* Grid layout for cards */
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* Card styles */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Section headings */
+.card h2 {
+  margin-bottom: 15px;
+  color: #353b48;
+}
+
+/* Buttons */
+button {
+  background-color: #0984e3;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+button:hover {
+  background-color: #74b9ff;
+}
+
+/* Inputs */
+input[type="text"] {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #dcdde1;
+  border-radius: 6px;
+  margin: 10px 0;
+  width: 80%;
+  max-width: 250px;
+}
+
+/* Color box */
+.color-box {
+  margin: 20px auto;
+  width: 150px;
+  height: 150px;
+  border: 2px solid #2d3436;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Text inside color box */
+.color-text {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+/* Loading text */
+.loading {
+  font-style: italic;
+  color: #636e72;
+}
+
+/* Error text */
+.error {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+/* User card */
+.user-card {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 15px 0;
+}
+
+/* Media query for tablets */
+@media (min-width: 768px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Media query for desktops */
+@media (min-width: 1024px) {
+  .cards-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
